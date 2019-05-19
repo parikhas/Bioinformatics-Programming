@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;a4/ch21GeneNames_readme.txt&apos; to &apos;chr21GeneNames_readme.txt&apos;" description="Rename resource &apos;ch21GeneNames_readme.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ch21GeneNames_readme.txt" name="chr21GeneNames_readme.txt" stamp="1519793829851" updateReferences="true"/>
-</session>
