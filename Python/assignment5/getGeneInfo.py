@@ -11,10 +11,23 @@ args = vars(parser.parse_args())
 
 host_folder = args["host"]
 gene_file = args["gene"]
+gene = " ".join(gene_file.split(".")[:1])
 
-directory = os.fsencode(host_folder)
+host_dict = {
+        "Horse" : "Equus_caballus",
+        "horses" : "Equus_caballus",
+        "horse" : "Equus_caballus",
+        "Equus caballus" : "Equus_caballus",
+        "Equus_caballus" : "Equus_caballus"
+        }
+
+host_name = host_dict[host_folder]
+host_fname = host_name.replace("_", " ")
+
+#directory = os.fsencode(host_folder)
+directory = os.fsencode(host_name)
+
 gfile = os.fsencode(gene_file)
-print(gfile)
 
 for files in os.listdir(directory):
     #print(files)
@@ -26,8 +39,9 @@ for files in os.listdir(directory):
                     line = " ".join(line.split()[1:])
                     tissues = line.split("|")
                     tissues = [x.strip(' ') for x in tissues]
-                    print("In directory, there are", len(tissues), "tissues that", gene_file ,"is expressed in:\n")
+                    print("\nFound Gene", gene, "for", host_fname)
+                    print("In",host_fname,"there are", len(tissues), "tissues that", gene ,"is expressed in:\n")
                     for i in tissues:
-                        print(tissues.index(i)+1, i.capitalize(), "\n")
+                        print(tissues.index(i)+1, i.capitalize())
 
 
