@@ -1,5 +1,13 @@
 #!/usr/bin/python
 
+#######################################################################################
+# File 		  : chr21GeneNames.py
+
+# Description : This program  asks the user to enter a gene symbol and then prints the description 
+# for that gene based on data from the chr21_genes.txt file. The program gives an error message 
+# if the entered symbol is not found in the table. The program continues to ask the user for genes until "quit" is given. 
+#######################################################################################
+
 import argparse
 import sys
 
