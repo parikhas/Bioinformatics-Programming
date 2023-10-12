@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#This program opens a FASTA file containing sequences of nucleotides. For each sequence, it will calculate the number of A's, T's, G's, C's, and N's along with the length of the sequence and also the %GC content of the entire sequence.
 
 import re
 from collections import Counter
