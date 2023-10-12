@@ -1,5 +1,13 @@
 #!/usr/bin/python
 
+#######################################################################################
+# File 		  : categories.py
+
+# Description : This program counts how many genes are in each category (1.1, 1.2, 2.1 etc.) 
+# based on data from the chr21_genes.txt file. The program prints the results such that 
+# categories are arranged in ascending order to an output file (categories.txt).  
+#######################################################################################
+
 import sys
 import argparse
 
