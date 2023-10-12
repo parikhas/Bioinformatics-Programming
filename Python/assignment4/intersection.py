@@ -1,5 +1,13 @@
 #!/usr/bin/python
 
+#######################################################################################
+# File 		  : intersection.py
+
+# Description : This program finds all gene symbols that appear both in the chr21_genes.txt file and in the HUGO_genes.txt file. 
+# These gene symbols are printed to a output file intersectionOutput.txt in alphabetical order (call the ) . 
+# The program also prints on the terminal how many common gene symbols were found. 
+#######################################################################################
+
 import sys
 
 chr21_genes = []
